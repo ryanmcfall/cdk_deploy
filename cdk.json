@@ -1,0 +1,17 @@
+{
+  "context": {
+    "applicationName": "imhere",
+    "region": "us-east-2",
+    "accountId": "PASS_ON_COMMAND_LINE",
+    "dockerRepositoryName": "imhere",
+    "dockerImageTag": "DYNAMICALLY_OVERRIDDEN_BY_WORKFLOW",
+    "applicationUrl": "https://app.hopesoftware.institute",
+    "loginPageDomainPrefix": "hopesoftware-staging",
+    "environmentName": "staging",
+    "springProfile": "aws",
+    "confirmationEmail": "info@stratospheric.dev",
+    "applicationDomain": "app.hopesoftware.institute",    
+    "hostedZoneDomain": "stratospheric.dev",
+    "githubToken": "SECRET_OVERRIDDEN_BY_WORKFLOW"
+  }
+}

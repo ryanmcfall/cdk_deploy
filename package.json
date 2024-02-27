@@ -1,0 +1,43 @@
+{
+  "name": "imhere_server",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "info": "IMPORTANT NOTE: Please make sure to replace the values inside the cdk.json with your configuration",
+    "bootstrap": "cdk bootstrap --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.BootstrapApp\"",
+    "certificate:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.CertificateApp\" --require-approval never",
+    "certificate:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.CertificateApp\" --force --require-approval never",
+    "network:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.NetworkApp\" --require-approval never",
+    "network:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.NetworkApp\" --force --require-approval never",
+    "repository:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.DockerRepositoryApp\" --require-approval never",
+    "repository:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.DockerRepositoryApp\" --force --require-approval never",
+    "cognito:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.CognitoApp\" --require-approval never",
+    "cognito:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.CognitoApp\" --force --require-approval never",
+    "database:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.DatabaseApp\" --require-approval never",
+    "database:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.DatabaseApp\" --force --require-approval never",
+    "messaging:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.MessagingApp\" --require-approval never",
+    "messaging:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.MessagingApp\" --force --require-approval never",
+    "activeMq:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.ActiveMqApp\" --require-approval never",
+    "activeMq:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.ActiveMqApp\" --force --require-approval never",
+    "service:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.ServiceApp\" --require-approval never --all",
+    "service:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.ServiceApp\" --force --require-approval never --all",
+    "domain:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.DomainApp\" --require-approval never",
+    "domain:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.DomainApp\" --force --require-approval never",
+    "deployment-sequencer:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.DeploymentSequencerApp\" --require-approval never",
+    "deployment-sequencer:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.DeploymentSequencerApp\" --force --require-approval never",
+    "monitoring:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.MonitoringApp\" --require-approval never",
+    "monitoring:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.MonitoringApp\" --force --require-approval never",
+    "canary:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.CanaryApp\" --require-approval never",
+    "canary:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.CanaryApp\" --force --require-approval never",
+    "dynamo:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.DynamoDbApp\" --require-approval never",
+    "dynamo:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.DynamoDbApp\" --force --require-approval never",
+    "github-actions:deploy": "cdk deploy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.GitHubActionsApp\" --require-approval never --all",
+    "github-actions:destroy": "cdk destroy --app \"mvnw -e -q compile exec:java -Dexec.mainClass=hopecollege.imhere.imhere_server.deploy.GitHubActionsApp\" --force --require-approval never --all"
+  },
+  "devDependencies": {
+    "aws-cdk": "2.130.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

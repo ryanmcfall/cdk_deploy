@@ -1,0 +1,16 @@
+.classpath.txt
+target
+.classpath
+.project
+.idea
+.settings
+.vscode
+*.iml
+*.zip
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+node_modules
+/deployment-sequencer-lambda/dist/
